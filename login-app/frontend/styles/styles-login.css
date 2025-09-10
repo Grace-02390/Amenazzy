@@ -1,0 +1,96 @@
+    body {
+      font-family: Arial, sans-serif;
+      background: #f2f2f2;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      padding-top: 50px;
+    }
+
+    .tabs {
+      display: flex;
+      align-items: center;
+      border-radius: 25px;
+      overflow: hidden;
+      box-shadow: 0 0 8px rgba(0,0,0,0.1);
+      margin-bottom: 20px;
+      padding: 20px;
+    }
+
+    .tab {
+      margin: 0;
+      padding: 12px 30px;
+      background: #ddd;
+      cursor: pointer;
+      border: none;
+      outline: none;
+      font-weight: bold;
+      transition: background 0.3s;
+    }
+
+    .tab.active {
+      margin: 0;
+      background: #000;
+      color: white;
+    }
+
+    .form-slider {
+      width: 300px;
+      overflow: hidden;
+    }
+
+    .form-container {
+      display: flex;
+      width: 600px; /* 2 formularios de 300px */
+      transition: transform 0.5s ease-in-out;
+    }
+
+    .form {
+      width: 280px;
+      display: flex;
+      flex-direction: column;
+      margin-right: 30px;
+    }
+
+    input {
+      margin: 10px 0;
+      padding: 10px;
+      width: 100%;
+      border: none;
+      border-radius: 8px;
+      background: #e0e0e0;
+      font-size: 14px;
+    }
+
+    button {
+      padding: 10px;
+      margin-top: 10px;
+      border: none;
+      border-radius: 20px;
+      background-color: #000;
+      color: white;
+      cursor: pointer;
+      font-weight: bold;
+    }
+
+    button:hover {
+      background-color: #333;
+    }
+
+    .toast {
+      position: fixed;
+      top: 20px;
+      right: 20px;
+      background: #333;
+      color: #fff;
+      padding: 12px 20px;
+      border-radius: 20px;
+      opacity: 0.9;
+      animation: fadeout 4s forwards;
+    }
+
+    @keyframes fadeout {
+      0% { opacity: 0.9; }
+      80% { opacity: 0.9; }
+      100% { opacity: 0; transform: translateY(-20px); }
+    }

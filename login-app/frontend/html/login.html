@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <title>Login Amenazzy</title>
+  <link rel="stylesheet" href="../styles/styles-login.css">
+</head>
+<body>
+  <h2>Bienvenido</h2>
+
+  <div class="tabs">
+    <button class="tab active" onclick="switchTab('login')">Iniciar sesión</button>
+    <button class="tab" onclick="switchTab('register')">Registrarse</button>
+  </div>
+
+  <div class="form-slider">
+    <div class="form-container" id="formContainer">
+      <div id="loginForm" class="form">
+        <input id="loginEmail" placeholder="Correo electrónico">
+        <input id="loginPass" type="password" placeholder="Contraseña">
+        <button onclick="login()">Entrar</button>
+      </div>
+
+      <div id="registerForm" class="form">
+        <input id="regEmail" placeholder="Nuevo correo">
+        <input id="regPass" type="password" placeholder="Nueva contraseña">
+        <button onclick="register()">Crear cuenta</button>
+      </div>
+    </div>
+  </div>
+
+  <script src="../scripts/login_script.js"></script>
+</body>
+</html>

@@ -1,0 +1,179 @@
+.cabecera {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 20px;
+  margin-right: 50px;
+}
+.cabecera .cabecera_izq {
+  display: flex;
+  flex-direction: row;
+  gap: 40px;
+}
+.cabecera .cabecera_izq a {
+  text-decoration: none;
+  color: black;
+}
+.cabecera .cabecera_der {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+}
+
+.boton-menu {
+  width: 60px;
+  height: 40px;
+  background-color: transparent;
+  color: none;
+  border-radius: 30px;
+  border: none;
+}
+.boton-menu:hover {
+  cursor: pointer;
+}
+.boton-menu img {
+  width: 65%;
+  height: auto;
+}
+.boton-menu img:hover {
+  transform: scale(1.1);
+}
+
+.boton_menu-uno {
+  width: 60px;
+  height: 40px;
+  background-color: transparent;
+  color: none;
+  border-radius: 30px;
+  border: none;
+  transition: transform 0.2s ease;
+}
+.boton_menu-uno:hover {
+  cursor: pointer;
+  transform: scale(1.1);
+}
+
+.boton_menu-dos {
+  width: 60px;
+  height: 40px;
+  background-color: transparent;
+  color: none;
+  border-radius: 30px;
+}
+
+.boton_uno {
+  transition: transform 0.2s ease;
+  border: none;
+}
+.boton_uno:hover {
+  cursor: pointer;
+  transform: scale(1.1);
+}
+.boton_uno img {
+  width: auto;
+  height: 40px;
+}
+
+.boton_dos {
+  transition: transform 0.2s ease;
+  border: none;
+  background-color: black;
+  color: white;
+}
+.boton_dos:hover {
+  cursor: pointer;
+  transform: scale(1.1);
+}
+.boton_dos a {
+  text-decoration: none;
+  color: white;
+}
+
+.boton_tres {
+  border: none;
+  transition: transform 0.2s ease;
+}
+.boton_tres:hover {
+  cursor: pointer;
+  transform: scale(1.1);
+}
+.boton_tres img {
+  width: auto;
+  height: 48px;
+  margin: -5px;
+}
+
+.boton_cuatro {
+  transition: transform 0.2s ease;
+  border: none;
+}
+.boton_cuatro:hover {
+  cursor: pointer;
+  transform: scale(1.1);
+}
+.boton_cuatro img {
+  width: auto;
+  height: 40px;
+}
+
+* {
+  box-sizing: border-box;
+  font-family: "Baloo 2", sans-serif;
+}
+
+body {
+  background-color: #efefef;
+}
+
+.card {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+  min-height: 100vh;
+  padding: 20px;
+  margin-top: -5%;
+}
+
+.cartas {
+  transition: transform 0.4s ease;
+  justify-content: space-between; /* Ocultas por defecto, se muestran con JS */
+  width: 300px;
+  height: 400px;
+  background-color: #fff;
+  border-radius: 5px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+.cartas:hover {
+  cursor: pointer;
+  transform: scale(1.1);
+  box-shadow: 10px 0 30px rgba(0, 0, 0, 0.5), -10px 0 30px rgba(0, 0, 0, 0.5);
+}
+
+.head {
+  height: 125px;
+  width: 100%;
+  position: relative;
+}
+.head img {
+  width: 150px;
+  height: 150px;
+  object-fit: cover;
+  border-radius: 5%;
+  position: absolute;
+  bottom: -45px;
+  left: 80px;
+}
+
+.description {
+  padding: 60px 20px 10px;
+  text-align: center;
+}
+
+.contact {
+  text-align: center;
+  margin-top: auto;
+  padding-bottom: 20px;
+}
+
+/*# sourceMappingURL=card.css.map */

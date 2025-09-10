@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Tienda</title>
+  <link rel="stylesheet" href="../styles/styles-shop.css">
+</head>
+<body>
+
+  <aside class="sidebar">
+    <h2>Filtros</h2>  
+
+    <hr />
+
+    <div class="filter-section size-filter">
+      <h3>Tallas</h3>
+      <div class="content">
+        <div class="item">
+          <input type="checkbox" id="size-xs" value="XS" data-filter="size" />
+          <label for="size-xs">XS</label>
+        </div>
+        <div class="item">
+          <input type="checkbox" id="size-s" value="S" data-filter="size" />
+          <label for="size-s">S</label>
+        </div>
+        <div class="item">
+          <input type="checkbox" id="size-m" value="M" data-filter="size" />
+          <label for="size-m">M</label>
+        </div>
+        <div class="item">
+          <input type="checkbox" id="size-l" value="L" data-filter="size" />
+          <label for="size-l">L</label>
+        </div>
+        <div class="item">
+          <input type="checkbox" id="size-xl" value="XL" data-filter="size" />
+          <label for="size-xl">XL</label>
+        </div>
+      </div>
+    </div>
+
+
+    <hr />
+
+    <div class="filter-section">
+      <h4 onclick="toggleSection(this)">Categorías</h4>
+      <div class="content">
+        <div class="item"><input type="checkbox" data-filter="categoria" value="Hoodies" /> Hoodies</div>
+        <div class="item"><input type="checkbox" data-filter="categoria" value="Gorras" /> Gorras</div>
+        <div class="item"><input type="checkbox" data-filter="categoria" value="Pantalones" /> Pantalones</div>
+        <div class="item"><input type="checkbox" data-filter="categoria" value="Zapatillas" /> Zapatillas</div>
+        <div class="item"><input type="checkbox" data-filter="categoria" value="Bufandas" /> Bufandas</div>
+        <div class="item"><input type="checkbox" data-filter="categoria" value="Chalecos" /> Chalecos</div>
+        <div class="item"><input type="checkbox" data-filter="categoria" value="Camisetas" /> Camisetas</div>
+      </div>
+    </div>
+
+    <hr />
+
+    <div class="filter-section">
+      <h4 onclick="toggleSection(this)">Colores</h4>
+      <div class="content">
+        <div class="item"><input type="checkbox" data-filter="color" value="Negro" /> Negro</div>
+        <div class="item"><input type="checkbox" data-filter="color" value="Blanco" /> Blanco</div>
+        <div class="item"><input type="checkbox" data-filter="color" value="Gris" /> Gris</div>
+        <div class="item"><input type="checkbox" data-filter="color" value="Rojo" /> Rojo</div>
+        <div class="item"><input type="checkbox" data-filter="color" value="Verde" /> Verde</div>
+        <div class="item"><input type="checkbox" data-filter="color" value="Vino" /> Vino</div>
+        <div class="item"><input type="checkbox" data-filter="color" value="Azul" /> Azul</div>
+        <div class="item"><input type="checkbox" data-filter="color" value="Morado" /> Morado</div>
+        <div class="item"><input type="checkbox" data-filter="color" value="Blanco" /> Tierra</div>
+        <div class="item"><input type="checkbox" data-filter="color" value="AzulOscuro" /> Azul Oscuro</div>
+        <div class="item"><input type="checkbox" data-filter="color" value="AzulClaro" /> Azul Claro</div>
+        <div class="item"><input type="checkbox" data-filter="color" value="Uva" /> Uva</div>
+        <div class="item"><input type="checkbox" data-filter="color" value="Naranja" /> Naranja</div>
+        <div class="item"><input type="checkbox" data-filter="color" value="Amarillo" /> Amarillo</div>
+        <div class="item"><input type="checkbox" data-filter="color" value="Beige" /> Beige</div>
+        <div class="item"><input type="checkbox" data-filter="color" value="Marron" /> Marron</div>
+
+      </div>
+    </div>
+
+    <hr />
+
+        <div class="filter-section">
+      <h4 onclick="toggleSection(this)">Filtrar por precio</h4>
+      <div class="content">
+        <div class="item"><input type="checkbox" data-filter="precio" value="-30" /> Menos de 30 S/.</div>
+        <div class="item"><input type="checkbox" data-filter="precio" value="-50" /> Menos de 50 S/.</div>
+      </div>
+    </div>
+
+    <hr />
+
+        <div class="filter-section">
+      <h4 onclick="toggleSection(this)">Colecciones</h4>
+      <div class="content">
+        <div class="item"><input type="checkbox" data-filter="colecciones" value="Verano" /> Verano</div>
+        <div class="item"><input type="checkbox" data-filter="colecciones" value="Invierno" /> Invierno</div>
+      </div>
+    </div>
+
+    <hr />
+
+        <div class="filter-section">
+      <h4 onclick="toggleSection(this)">Etiquetas</h4>
+      <div class="content">
+        <div class="item"><input type="checkbox" data-filter="etiquetas" value="Novedad" /> Novedad</div>
+        <div class="item"><input type="checkbox" data-filter="etiquetas" value="Descuento" />Descuento</div>
+      </div>
+    </div>
+
+    <hr />
+
+        <div class="filter-section">
+      <h4 onclick="toggleSection(this)">Ratings</h4>
+      <div class="content">
+        <div class="item"><input type="checkbox" data-filter="+vendido" value="+vendido" /> Los mas vendidos</div>
+        <div class="item"><input type="checkbox" data-filter="color" value="Blanco" /> Blanco</div>
+      </div>
+    </div>
+
+  </aside>
+
+  <main class="main">
+    <h2>Productos</h2>
+    <div class="searchbar">
+      <input type="text" placeholder="Buscar" oninput="filterProducts()" id="barra_busqueda" />
+      <img src="../img/lupa.png" alt="Buscar" class="search-icon">
+    </div>
+    <div class="products" id="products-container">
+      <!-- Productos renderizados dinámicamente -->
+    </div>
+  </main>
+  <script src="../scripts/shop_script.js"></script>
+</body>
+</html>

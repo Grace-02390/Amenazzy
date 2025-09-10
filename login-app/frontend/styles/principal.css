@@ -1,0 +1,227 @@
+.cabecera {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 20px;
+  margin-right: 50px;
+}
+.cabecera .cabecera_izq {
+  display: flex;
+  flex-direction: row;
+  gap: 40px;
+}
+.cabecera .cabecera_izq a {
+  text-decoration: none;
+  color: black;
+}
+.cabecera .cabecera_der {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+}
+
+.boton-menu {
+  width: 60px;
+  height: 40px;
+  background-color: transparent;
+  color: none;
+  border-radius: 30px;
+  border: none;
+}
+.boton-menu:hover {
+  cursor: pointer;
+}
+.boton-menu img {
+  width: 65%;
+  height: auto;
+}
+.boton-menu img:hover {
+  transform: scale(1.1);
+}
+
+.boton_menu-uno {
+  width: 60px;
+  height: 40px;
+  background-color: transparent;
+  color: none;
+  border-radius: 30px;
+  border: none;
+  transition: transform 0.2s ease;
+}
+.boton_menu-uno:hover {
+  cursor: pointer;
+  transform: scale(1.1);
+}
+
+.boton_menu-dos {
+  width: 60px;
+  height: 40px;
+  background-color: transparent;
+  color: none;
+  border-radius: 30px;
+}
+
+.boton_uno {
+  transition: transform 0.2s ease;
+  border: none;
+}
+.boton_uno:hover {
+  cursor: pointer;
+  transform: scale(1.1);
+}
+.boton_uno img {
+  width: auto;
+  height: 40px;
+}
+
+.boton_dos {
+  transition: transform 0.2s ease;
+  border: none;
+  background-color: black;
+  color: white;
+}
+.boton_dos:hover {
+  cursor: pointer;
+  transform: scale(1.1);
+}
+.boton_dos a {
+  text-decoration: none;
+  color: white;
+}
+
+.boton_tres {
+  border: none;
+  transition: transform 0.2s ease;
+}
+.boton_tres:hover {
+  cursor: pointer;
+  transform: scale(1.1);
+}
+.boton_tres img {
+  width: auto;
+  height: 48px;
+  margin: -5px;
+}
+
+.boton_cuatro {
+  transition: transform 0.2s ease;
+  border: none;
+}
+.boton_cuatro:hover {
+  cursor: pointer;
+  transform: scale(1.1);
+}
+.boton_cuatro img {
+  width: auto;
+  height: 40px;
+}
+
+.filtro-contenedor {
+  width: 300px;
+  font-family: "Poppins", sans-serif;
+  margin-left: 10px;
+}
+
+.botones-filtro {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  align-items: flex-start;
+  margin-bottom: 10px;
+}
+.botones-filtro .filtro-btn {
+  transition: transform 0.2s ease;
+  display: flex;
+  background-color: transparent;
+  font-size: 11px;
+  color: rgb(0, 0, 0);
+  border-color: none;
+  border: none;
+  cursor: pointer;
+}
+.botones-filtro .filtro-btn:hover {
+  cursor: pointer;
+  transform: scale(1.1);
+}
+
+.buscar-contenedor {
+  display: flex;
+  gap: 8px;
+  border: none;
+  background-color: rgb(221, 221, 221);
+  overflow: hidden;
+  margin-left: 5px;
+}
+.buscar-contenedor img {
+  width: 4%;
+  height: 4%;
+  padding: 10px;
+  transition: transform 0.2s ease;
+}
+.buscar-contenedor img:hover {
+  cursor: pointer;
+  transform: scale(1.1);
+}
+.buscar-contenedor input {
+  background-color: rgb(221, 221, 221);
+  flex: 1;
+  padding: 8px;
+  font-size: 14px;
+  border: none; /* Quita el borde normal */
+  outline: none; /* Quita el contorno al hacer focus */
+  box-shadow: none;
+}
+
+.cuerpo {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  margin-left: 15px;
+  margin-right: 50px;
+}
+.cuerpo_izq {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.cuerpo_izq h1 {
+  font-size: 3rem;
+  margin-bottom: 0.9rem;
+}
+.cuerpo_izq-letras {
+  line-height: 0.8;
+}
+.cuerpo .boton_cuerpo {
+  transition: transform 0.2s ease;
+  background-color: rgb(221, 221, 221);
+  border: none;
+  align-content: flex-start;
+  height: 33px;
+  width: 300px;
+}
+.cuerpo .boton_cuerpo:hover {
+  cursor: pointer;
+  transform: scale(1.1);
+}
+.cuerpo .boton_cuerpo a{
+    text-decoration: none;
+    color: black;
+}
+.cuerpo_der {
+  display: flex;
+  flex-direction: row;
+  gap: 15px;
+  margin-top: 15px;
+}
+.cuerpo_der img {
+  height: 400px;
+  width: 400px;
+}
+
+body {
+  margin-left: 20px;
+  margin-right: 20px;
+  margin-top: 20px;
+  font-family: "Poppins", sans-serif;
+}
+
+/*# sourceMappingURL=principal.css.map */

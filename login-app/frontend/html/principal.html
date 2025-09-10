@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AMENAZY</title>
+    <link rel="stylesheet" href="../styles/principal.css">
+    <link href="https://cdn.jsdelivr.net/npm/@n8n/chat/dist/style.css" rel="stylesheet" />
+    <script type="module">
+        import { createChat } from 'https://cdn.jsdelivr.net/npm/@n8n/chat/dist/chat.bundle.es.js';
+
+        createChat({
+            webhookUrl: 'http://localhost:5678/webhook/9fe9ece8-a368-4289-b5ed-56acf155dae9/chat',
+            webhookConfig: {
+                method: 'POST',
+                headers: {}
+            },
+            target: '#n8n-chat',
+            mode: 'window',
+            chatInputKey: 'chatInput',
+            chatSessionKey: 'sessionId',
+            metadata: {},
+            showWelcomeScreen: false,
+            defaultLanguage: 'en',
+            initialMessages: [
+                'Hola! 👋',
+                'Como puedo ayudarte hoy?'
+            ],
+            i18n: {
+                en: {
+                    title: 'Que tal! 👋',
+                    subtitle: "Hablemos. Estamos disponibles 24/7.",
+                    footer: '',
+                    getStarted: 'New Conversation',
+                    inputPlaceholder: 'Pregunta lo que quieras..',
+                },
+            },
+        });
+    </script>
+</head>
+
+<body>
+
+    <header class="cabecera">
+        <div class="cabecera_izq">
+            <button class="boton-menu"> <img src="../img/hamburguesa.png" alt="menu-img"></button>
+            <button class="boton_menu-uno"> <a href="../html/principal.html">Home</a></button>
+            <button class="boton_menu-uno"> <a href="../html/cards.html">Coleciones</a></button>
+            <button class="boton_menu-uno"> <a href="">Nuevo</a></button>
+        </div>
+        <div class="cabecera_der">
+            <button class="boton_uno boton_menu-dos"> <a href=""><img src="../img/corazon.png"
+                        alt="corazon"></a></button>
+            <button class="boton_dos boton_menu-dos"><a href="">Cartas</a></button>
+            <button class="boton_tres boton_menu-dos"> <a href=""><img src="../img/bolsa-de-la-compra.png"
+                        alt="bolsa"></a></button>
+            <button class="boton_cuatro boton_menu-dos"> <a href=""><img src="../img/usuario-de-perfil.png"
+                        alt=""></a></button>
+        </div>
+
+    </header>
+    <div class="filtro-contenedor">
+        <div class="botones-filtro">
+            <button class="filtro-btn">HOMBRE</button>
+            <button class="filtro-btn">MUJER</button>
+            <button class="filtro-btn">UNISEX</button>
+        </div>
+        <div class="buscar-contenedor">
+            <img src="../img/simbolo-de-la-interfaz-de-busqueda.png" alt="Buscar">
+            <input type="text" placeholder="Escribe aquí...">
+        </div>
+
+    </div>
+    <div class="cuerpo">
+        <div class="cuerpo_izq">
+            <div class="cuerpo_izq-letras">
+                <h1>NEW <br>COLLECTION</h1>
+                <p>Summer</p>
+                <p>2024</p>
+            </div>
+            <div class="boton_cue">
+                <button class="boton_cuerpo"><a href="../html/shop.html">Ir a la tienda</a></button>
+            </div>
+
+        </div>
+        <div class="cuerpo_der">
+            <div>
+                <img src="../img/modelo2.jpg" alt="modelo2">
+            </div>
+            <div>
+                <img src="../img/modelo3.jpg" alt="modelo3">
+            </div>
+        </div>
+    </div>
+
+
+</body>
+
+</html>
